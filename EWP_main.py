@@ -43,3 +43,12 @@ elif employee_state == "part-time":
     print("Employee is Part Time. Wage: ", {part_time_wage})
 else:
     print("Employee is Absent.")
+
+#UC5
+working_days_per_month = 20
+month_wage = 0
+if employee_state == "full-time":
+    month_wage = working_days_per_month * full_time_wage
+elif employee_state == "part-time":
+    month_wage = working_days_per_month * part_time_wage
+print("Month wage is : ", month_wage)
