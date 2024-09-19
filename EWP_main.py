@@ -71,3 +71,23 @@ while total_working_hours < max_working_hours and total_working_days < max_worki
     total_wages += work_hours * wage_per_hour
 
 print(f"Day {total_working_days}: Worked {work_hours} hours, Total hours: {total_working_hours}, Wages: {total_wages}")
+
+#UC7
+class EmployeeWageComputation:
+    wage_per_hour = 20
+    full_day_hour = 8
+    part_time_hour = 4
+
+    @classmethod
+    def calculate_wage(cls, employee_type):
+        if employee_type == 1:
+            return cls.full_day_hour * cls.wage_per_hour
+        elif employee_type == 2:
+            return cls.part_time_hour * cls.wage_per_hour
+        else:
+            return 0
+
+employee_type = random.choice([0, 1, 2])
+employee_daily_wage = EmployeeWageComputation.calculate_wage(employee_type)
+
+print(f"Employee Wage: {employee_daily_wage}")
