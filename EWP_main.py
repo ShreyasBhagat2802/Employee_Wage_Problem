@@ -52,3 +52,22 @@ if employee_state == "full-time":
 elif employee_state == "part-time":
     month_wage = working_days_per_month * part_time_wage
 print("Month wage is : ", month_wage)
+
+#UC6
+max_working_hours = 100
+max_working_days = 20
+
+total_working_hours = 0
+total_working_days = 0
+total_wages = 0
+
+while total_working_hours < max_working_hours and total_working_days < max_working_days:
+    
+    work_hours = random.choice([0, 4, 8])
+    
+    total_working_hours += work_hours
+    total_working_days += 1
+
+    total_wages += work_hours * wage_per_hour
+
+print(f"Day {total_working_days}: Worked {work_hours} hours, Total hours: {total_working_hours}, Wages: {total_wages}")
