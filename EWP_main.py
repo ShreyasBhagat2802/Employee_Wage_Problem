@@ -16,3 +16,10 @@ full_day_hours = 8
 full_time_wage = wage_per_hour * full_day_hours
     
 print(full_time_wage)
+
+#UC3
+part_time_hours = 8
+    
+part_time_wage = wage_per_hour * part_time_hours
+    
+print(part_time_hours)
